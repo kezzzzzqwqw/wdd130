@@ -1,10 +1,10 @@
 :root {
     --primary-color: #0a1f44;
     --secondary-color: #0077b6;
-    --accent1-color: #00b4d8;
+    --accent1-color: #03353f;
     --accent2-color: #90e0ef;
     --background-color: #ffffff;
-    --text-color: #0b0b0b;
+    --text-color: #ffffff;
 
     --heading-font: "Oswald", sans-serif;
     --body-font: "Open Sans", sans-serif;
@@ -104,13 +104,12 @@ h1 {
     padding: 16px;
     text-align: center;
     opacity: 0.8;
-    background-color: var(--accent1-color);
-    color: #fff;
+    background-color: var(--secondary-color);
+    color: var(--text-color);
 }
 
 h2 {
     background-color: var(--accent2-color);
-    color: var(--primary-color);
     text-align: center;
     padding: 15px 0;
     margin: 20px 0;
