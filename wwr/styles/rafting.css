@@ -37,7 +37,6 @@ footer {
 h1,
 h2 {
     font-family: var(--heading-font);
-    color: var(--primary-color);
 }
 
 h1 {
@@ -140,16 +139,6 @@ nav a {
     padding-right: 40%;
 }
 
-/* Social Media */
-.socialmedia a {
-    text-decoration: none;
-}
-
-.socialmedia img {
-    width: 50px;
-    height: auto;
-}
-
 /* History Section */
 .history {
     max-width: 100%;
@@ -194,7 +183,6 @@ nav a {
     text-align: center;
     border-radius: 10px;
     background: var(--secondary-color);
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 
 }
 
@@ -232,4 +220,8 @@ footer {
 .socialmedia img {
     width: 40px;
     height: auto
+}
+
+.socialmedia a {
+    text-decoration: none;
 }
