@@ -296,19 +296,16 @@ footer {
     color: var(--accent1-color);
 }
 
-/* CONTACT FORM */
 .contact-form h2 {
     margin-bottom: 15px;
 }
 
-/* Form layout */
 .contact-form form {
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
 
-/* Inputs */
 .contact-form input,
 .contact-form textarea {
     padding: 10px;
@@ -317,13 +314,11 @@ footer {
     font-family: var(--body-font);
 }
 
-/* Radio + checkbox grouping */
 .contact-form label {
     font-weight: 600;
     margin-top: 5px;
 }
 
-/* Submit button */
 .contact-form button {
     background: var(--secondary-color);
     color: var(--text-color);
@@ -337,4 +332,37 @@ footer {
 
 .contact-form button:hover {
     background: var(--primary-color);
+}
+
+.contact-form fieldset {
+    border: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.contact-form legend {
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: var(--accent1-color);
+}
+
+.contact-form fieldset label {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-weight: 500;
+    margin-right: 10px;
+}
+
+.contact-form input[type="checkbox"] {
+    width: auto;
+    margin-right: 6px;
+}
+
+.contact-form input[type="radio"] {
+    width: auto;
+    margin-right: 4px;
 }
