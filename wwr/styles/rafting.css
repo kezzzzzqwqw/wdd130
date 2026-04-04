@@ -228,3 +228,113 @@ footer {
 .socialmedia a {
     text-decoration: none;
 }
+
+.contact-info,
+.map,
+.employees,
+.contact-form {
+    margin: 20px;
+    padding: 10px;
+}
+
+.contact-info h1 {
+    position: static;
+    background: none;
+    color: var(--primary-color);
+    opacity: 1;
+    padding: 0;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.contact-info p {
+    margin: 5px 0;
+}
+
+/* MAP */
+.map iframe {
+    width: 100%;
+    border: 0;
+    border-radius: 8px;
+}
+
+/* EMPLOYEES SECTION */
+.employees h2 {
+    margin-bottom: 15px;
+}
+
+.employee-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    align-items: stretch;
+}
+
+.employees figure {
+    margin: 0;
+    background: var(--accent2-color);
+    border-radius: 10px;
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: column;
+
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    height: 100%;
+}
+
+.employees img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    display: block;
+}
+
+.employees figcaption {
+    padding: 10px;
+    font-weight: 600;
+    color: var(--accent1-color);
+}
+
+/* CONTACT FORM */
+.contact-form h2 {
+    margin-bottom: 15px;
+}
+
+/* Form layout */
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Inputs */
+.contact-form input,
+.contact-form textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: var(--body-font);
+}
+
+/* Radio + checkbox grouping */
+.contact-form label {
+    font-weight: 600;
+    margin-top: 5px;
+}
+
+/* Submit button */
+.contact-form button {
+    background: var(--secondary-color);
+    color: var(--text-color);
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.contact-form button:hover {
+    background: var(--primary-color);
+}
