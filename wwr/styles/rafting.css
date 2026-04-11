@@ -46,11 +46,10 @@ h1 {
     text-align: center;
     background-color: var(--secondary-color);
     color: var(--text-color);
-    opacity: 0.8;
 }
 
 h2 {
-    background-color: var(--primary-color);
+    background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
     color: var(--text-color);
     text-align: center;
     padding: 15px 10px;
@@ -68,10 +67,12 @@ article {
 
 /* Header */
 header {
-    display: grid;
-    grid-template-columns: 1fr auto;
+    display: flex;
+    justify-content: space-between;
     align-items: center;
-    padding: 0.5rem 2rem;
+    padding: 15px 30px;
+    background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
 .logo {
@@ -83,16 +84,20 @@ header {
 nav ul {
     list-style: none;
     display: flex;
-    justify-content: space-between;
-    gap: 1rem;
-    color: var(--accent1-color)
+    gap: 1.5rem;
 }
 
 nav a {
     text-decoration: none;
-    padding: 1rem;
-    color: var(--accent1-color);
-    font-weight: 700;
+    color: white;
+    font-weight: 600;
+    position: relative;
+    padding: 8px 5px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: var(--accent2-color);
 }
 
 /* Hero Section */
@@ -132,7 +137,7 @@ nav a {
 
 .hero article p {
     position: absolute;
-    bottom: 18px;
+    bottom: 10px;
     margin: 0;
     font-size: 14px;
     font-weight: 600;
@@ -207,7 +212,7 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: var(--primary-color);
+    background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
     color: var(--text-color);
     padding: 0.01rem 1rem;
 
@@ -365,4 +370,233 @@ footer {
 .contact-form input[type="radio"] {
     width: auto;
     margin-right: 4px;
+}
+
+/* CTA SECTION */
+.cta {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: var(--accent2-color);
+    color: var(--primary-color);
+    border-radius: 10px;
+    margin: 40px 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.cta h2 {
+    margin-bottom: 10px;
+    font-size: 1.8rem;
+}
+
+.cta p {
+    font-size: 1rem;
+    opacity: 0.95;
+}
+
+.cta .btn {
+    display: inline-block;
+    margin-top: 18px;
+    padding: 12px 26px;
+    background-color: var(--text-color);
+    color: var(--secondary-color);
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.cta .btn:hover {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+}
+
+/* HOME GRID */
+.home-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 40px;
+}
+
+.grid-item img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+/* NEWSLETTER */
+.newsletter {
+    text-align: center;
+    padding: 80px 20px 60px;
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    color: var(--text-color);
+    border-radius: 10px;
+    margin: 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* TITLE */
+.newsletter h2 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    letter-spacing: 1px;
+    background: none;
+    color: var(--text-color);
+}
+
+/* TEXT */
+.newsletter p {
+    font-size: 1.1rem;
+    margin-bottom: 25px;
+    max-width: 600px;
+    opacity: 0.9;
+}
+
+/* FORM */
+.newsletter form {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    max-width: 500px;
+    justify-content: center;
+    align-items: center;
+}
+
+/* INPUT FIELD */
+.newsletter input {
+    flex: 1;
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+}
+
+.newsletter button {
+    padding: 12px 26px;
+    border-radius: 8px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+
+    background-color: var(--text-color);
+    color: var(--secondary-color);
+}
+
+.newsletter button:hover {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+}
+
+/* TRIPS */
+
+.trips-hero {
+    text-align: center;
+    padding: 100px 20px 80px;
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    color: var(--text-color);
+    border-radius: 10px;
+    margin: 20px;
+}
+
+.trips-hero h1 {
+    position: inherit;
+    font-size: 2.8rem;
+    margin-bottom: 15px;
+    letter-spacing: 1px;
+
+    background: none;
+    color: var(--text-color);
+    padding: 0;
+}
+
+.trips-hero p {
+    font-size: 1.1rem;
+    margin-bottom: 25px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* CTA BUTTON */
+.cta-button {
+    display: inline-block;
+    background-color: var(--text-color);
+    color: var(--secondary-color);
+    padding: 12px 26px;
+    border-radius: 8px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.cta-button:hover {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+}
+
+.trip-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 250px);
+    justify-content: center;
+    gap: 20px;
+    padding: 40px;
+}
+
+.trip-card {
+    background-color: var(--text-color);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.trip-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.trip-card h2 {
+    margin: 15px;
+    color: var(--text-color);
+}
+
+.trip-card p {
+    margin: 0 15px 20px;
+    font-size: 0.95rem;
+    text-align: center;
+    color: var(--accent1-color);
+}
+
+/* TABLE SECTION */
+.trip-table-section {
+    padding: 40px;
+}
+
+.trip-table-section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* TABLE STYLE */
+.trip-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+.trip-table th {
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    padding: 12px;
+}
+
+.trip-table td {
+    padding: 10px;
+    border-bottom: 1px solid var(--primary-color);
+}
+
+.trip-table tr:hover {
+    background-color: var(--accent2-color);
 }
